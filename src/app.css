@@ -1,0 +1,73 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply h-full;
+}
+
+body {
+	@apply bg-gray-900 text-gray-50 h-full;
+}
+
+h1 {
+	@apply text-2xl font-medium pb-2;
+}
+
+a {
+	@apply text-rose-500 font-medium hover:underline hover:cursor-pointer;
+}
+
+nav {
+	@apply flex items-center w-full justify-between px-4 py-2;
+}
+
+button {
+	@apply rounded bg-rose-500 py-1 mt-2 text-sm hover:bg-rose-600 transition-all duration-200 ease-in-out !important;
+}
+
+input {
+	@apply rounded w-full focus:outline-none border border-gray-50 bg-transparent text-gray-50 py-1 px-2 mt-1 text-sm !important;
+}
+
+h2 {
+	@apply font-medium;
+}
+
+form {
+	@apply flex flex-col max-w-xs text-left;
+}
+
+label {
+	@apply text-xs !important;
+}
+
+.links {
+	@apply flex items-center gap-4;
+}
+
+.slot-boundary {
+	@apply border-2 w-full h-72 bg-gray-900 ml-4 border-indigo-400;
+}
+
+.sidebar {
+	@apply flex flex-col justify-start items-start h-full;
+}
+.sidebar-links {
+	@apply flex flex-col w-24 text-left h-full text-sm divide-y items-start;
+}
+
+.sidebar-links a {
+	@apply py-1 w-full;
+}
+.settings-container {
+	@apply flex items-start justify-start pt-2 w-full;
+}
+.settings {
+	@apply text-left py-2 px-4;
+}
+
+.error-container {
+	@apply text-center !important;
+}
